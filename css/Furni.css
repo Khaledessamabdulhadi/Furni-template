@@ -498,7 +498,7 @@ p {
       }
       @media (max-width: 560px) {
         width: 250px;
-        bottom: -75px;
+        bottom: -100px;
       }
       img {
         width: 100%;
