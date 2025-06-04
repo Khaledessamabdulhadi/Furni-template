@@ -677,3 +677,56 @@ p {
   }
 }
 /* EDN testimonials Section */
+/* STart Posts Section */
+.posts {
+  padding: 100px 0;
+  .heading {
+    a {
+      font-size: 16px;
+      color: #222222;
+      display: block;
+      font-weight: 600;
+      text-transform: capitalize;
+      text-decoration: underline;
+      transition: 0.3s;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .items {
+    .box {
+      margin-bottom: 20px;
+      img {
+        max-width: 100%;
+        border-radius: 30px;
+        margin-bottom: 15px;
+      }
+      h5 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        @media (max-width: 991px) {
+          font-size: 12px;
+          font-weight: 700;
+        }
+      }
+      p {
+        color: #6a6a6a;
+        font-size: 14px;
+        span {
+          color: #222222;
+          font-weight: 700;
+          font-size: 14px;
+          @media (max-width: 991px) {
+            font-size: 12px;
+          }
+        }
+        @media (max-width: 991px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+/* ENd Posts Section */
