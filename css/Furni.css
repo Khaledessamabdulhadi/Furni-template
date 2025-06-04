@@ -633,6 +633,9 @@ p {
         font-weight: 600;
         margin-bottom: 30px;
         color: #6a6a6a;
+        @media (max-width: 560px) {
+          font-size: 13px;
+        }
       }
       h4 {
         font-size: 15px;
@@ -642,6 +645,9 @@ p {
         font-size: 14px;
         color: #6a6a6a;
       }
+    }
+    @media (max-width: 767px) {
+      max-width: 100%;
     }
   }
   .carousel-indicators [data-bs-target] {
@@ -664,6 +670,9 @@ p {
       &:hover {
         background-color: #3b5d50;
       }
+    }
+    @media (max-width: 767px) {
+      display: none;
     }
   }
 }
