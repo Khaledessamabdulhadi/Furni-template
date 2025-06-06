@@ -89,126 +89,157 @@
           <div
             class="info-text col-lg-6 col-sm-12 d-flex justify-content-center align-items-start flex-column"
           >
-            <h1>cart</h1>
+            <h1>checkout</h1>
           </div>
         </div>
       </div>
     </div>
     <!-- END Landing Section -->
-    <!-- Start Table Section -->
-    <div class="table-price">
+    <!-- Start Checkout Section -->
+    <div class="checkout">
       <div class="container">
-        <table>
-          <tr>
-            <th>image</th>
-            <th>product</th>
-            <th>price</th>
-            <th>Quantity</th>
-            <th>totlal</th>
-            <th>Remove</th>
-          </tr>
-          <tr>
-            <td><img src="image/product-1.png" alt="" /></td>
-            <td>Product 1</td>
-            <td>$49.00</td>
-            <td>
-              <a href="">
-                <i class="fas fa-minus"></i>
-              </a>
-              <span>1</span>
-              <a href="">
-                <i class="fas fa-plus"></i>
-              </a>
-            </td>
-            <td>$49.00</td>
-            <td>
-              <a href="#">
-                <i class="fas fa-trash"></i>
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td><img src="image/product-2.png" alt="" /></td>
-            <td>Product 1</td>
-            <td>$49.00</td>
-            <td>
-              <a href="">
-                <i class="fas fa-minus"></i>
-              </a>
-              <span>1</span>
-              <a href="">
-                <i class="fas fa-plus"></i>
-              </a>
-            </td>
-            <td>$49.00</td>
-            <td>
-              <a href="#">
-                <i class="fas fa-trash"></i>
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td><img src="image/product-3.png" alt="" /></td>
-            <td>Product 1</td>
-            <td>$49.00</td>
-            <td>
-              <a href="">
-                <i class="fas fa-minus"></i>
-              </a>
-              <span>1</span>
-              <a href="">
-                <i class="fas fa-plus"></i>
-              </a>
-            </td>
-            <td>$49.00</td>
-            <td>
-              <a href="#">
-                <i class="fas fa-trash"></i>
-              </a>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="container">
-        <div class="info-cart pt-5 pb-5">
-          <div class="row d-flex justify-content-between w-100">
-            <div class="update-cart col-md-5 d-flex flex-column mb-5 mb-md-0">
-              <div
-                class="button d-flex justify-content-between flex-column flex-lg-row"
-              >
-                <button>updat cart</button>
-                <button>continue shoppine</button>
+        <div class="row">
+          <div class="billing-details col-lg-6">
+            <h3>Billing Details</h3>
+            <div class="info-details">
+              <div class="select d-flex flex-column">
+                <label for="#">countries<span>*</span></label>
+                <select id="cars" name="cars">
+                  <option value="#">select a country</option>
+                  <option value="Egypt">Egypt</option>
+                  <option value="Saudi">Saudi arabia</option>
+                  <option value="America">America</option>
+                  <option value="Korea">Korea</option>
+                  <option value="Morocooo">Morocooo</option>
+                </select>
               </div>
-              <h3>copoun</h3>
-              <p>Enter your coupon code if you have one.</p>
               <div
-                class="input d-flex justify-content-between flex-column flex-sm-row"
+                class="text d-flex justify-content-between gap-3 flex-column flex-sm-row"
               >
+                <div class="name d-flex flex-column w-100 w-sm-50">
+                  <label for="#">first name</label>
+                  <input type="text" />
+                </div>
+                <div class="name d-flex flex-column w-100 w-sm-50">
+                  <label for="#">last name</label>
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="input d-flex flex-column">
+                <label for="#">company name</label>
+                <input type="text" />
+              </div>
+              <div class="input d-flex flex-column">
+                <label for="#">address <span>*</span></label>
+                <input type="text" />
+              </div>
+              <div class="input d-flex flex-column">
                 <input
                   type="text"
-                  class="w-100 mb-3 mb-sm-0"
-                  placeholder="enter your code"
+                  placeholder="apartmen, suite, unit, etc.(optional)"
                 />
-                <input type="submit" value="apply coupun" />
+              </div>
+              <div
+                class="text d-flex justify-content-between gap-3 flex-column flex-sm-row"
+              >
+                <div class="name d-flex flex-column w-100 w-sm-50">
+                  <label for="#">state / country <span>*</span></label>
+                  <input type="text" />
+                </div>
+                <div class="name d-flex flex-column w-100 w-sm-50">
+                  <label for="#">posta / zip <span>*</span></label>
+                  <input type="number" />
+                </div>
+              </div>
+              <div
+                class="text d-flex justify-content-between gap-3 flex-column flex-sm-row"
+              >
+                <div class="name d-flex flex-column w-100 w-sm-50">
+                  <label for="#">email address <span>*</span></label>
+                  <input type="email d-flex flex-column " />
+                </div>
+                <div class="name d-flex flex-column w-100 w-sm-50">
+                  <label for="#">phone <span>*</span></label>
+                  <input type="number" />
+                </div>
+              </div>
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  id="account"
+                  name="account"
+                  value="Bike"
+                />
+                <label for="account"> Create an account?</label><br />
+                <input
+                  type="checkbox"
+                  id="address"
+                  name="address"
+                  value="Car"
+                />
+                <label for="address">Ship To A Different Address?</label><br />
+              </div>
+              <div class="textarea d-flex flex-column">
+                <label for="#">order notes</label>
+                <textarea name="order" id="order"></textarea>
               </div>
             </div>
-            <div class="cart-total col-md-3">
-              <h2>Cart Totals</h2>
-              <div class="info d-flex justify-content-between">
-                <span>Subtotal</span>
-                <span>$230.00</span>
+          </div>
+          <div class="coupun-code col-lg-6">
+            <h3>Coupon Code</h3>
+            <div class="info-coupun">
+              <div class="text">
+                <p>Enter your coupon code if you have one</p>
+                <div
+                  class="input d-flex justify-content-between w-100 gap-2 flex-column flex-sm-row"
+                >
+                  <input
+                    type="text"
+                    placeholder="coupun code"
+                    class="w-100 w-sm-75"
+                  />
+                  <button class="w-25">apply</button>
+                </div>
               </div>
-              <div class="info d-flex justify-content-between mb-3">
-                <span>Total</span>
-                <span> $230.00</span>
+            </div>
+            <h3>your order</h3>
+            <div class="info-coupun">
+              <div class="text">
+                <table>
+                  <tr>
+                    <th>image</th>
+                    <th>product</th>
+                  </tr>
+                  <tr>
+                    <td>Top Up T-Shirt x 1</td>
+                    <td>$250.00</td>
+                  </tr>
+                  <tr>
+                    <td>Polo Shirt x 1</td>
+                    <td>$100.00</td>
+                  </tr>
+                  <tr>
+                    <td><span>Cart Subtotal</span></td>
+                    <td><span>$350.00</span></td>
+                  </tr>
+                  <tr>
+                    <td><span>Order Total</span></td>
+                    <td><span>$350.00</span></td>
+                  </tr>
+                </table>
+                <div class="info">
+                  <p>direct bank transfer</p>
+                  <p>cheque payment</p>
+                  <p>paypal</p>
+                </div>
+                <button>place Order</button>
               </div>
-              <a href="#"><button>procced to checkout</button></a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- ENd Table Section -->
+    <!-- ENd Checkout Section -->
     <!-- Start Footer Section -->
     <div class="footer">
       <div class="container">
